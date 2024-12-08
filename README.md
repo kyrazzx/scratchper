@@ -29,8 +29,8 @@ pip install requests colorama
 ### Setup
 1. Clone this repository or download the script:
    ```bash
-   git clone https://github.com/yourusername/username-checker-cli.git
-   cd username-checker-cli
+   git clone https://github.com/kyrazzx/scratchper.git
+   cd scratchper
    ```
 2. Create a `list.txt` file in the same directory containing one username per line:
    ```plaintext
@@ -113,6 +113,6 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 
 ### 🌟 Star this repo if you find it useful!  
 ```
-⭐ GitHub: https://github.com/yourusername/username-checker-cli
+⭐ GitHub: https://github.com/kyrazzx/scratchper/
 ```
 ```
