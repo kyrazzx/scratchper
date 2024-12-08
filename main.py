@@ -85,7 +85,7 @@ def main():
         for count, word in enumerate(words, start=1):
             response = session.get(LINK + word)
             if response.json().get('msg') == 'valid username':
-                print(Fore.LIGHTRED_EX + f"Line {count}: {word} is available")
+                print(Fore.GREEN + f"Username {count}: {word} is available")
                 free.append(f"{word}\n")
             else:
                 print(Fore.RED + f"Username {count}: {word} is unavailable")
