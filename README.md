@@ -115,4 +115,3 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 ```
 ⭐ GitHub: https://github.com/kyrazzx/scratchper/
 ```
-```
