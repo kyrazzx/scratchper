@@ -7,6 +7,9 @@ from itertools import cycle
 
 init(autoreset=True)
 
+# Initialize the global variable
+LINK = 'https://api.scratch.mit.edu/accounts/checkusername/'
+
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -76,7 +79,6 @@ def change_endpoint():
 
 def main():
     global LINK
-    LINK = 'https://api.scratch.mit.edu/accounts/checkusername/'
     with open("list.txt", "r") as file:
         words = file.read().strip().split("\n")
     free = []
