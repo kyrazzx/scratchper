@@ -7,7 +7,6 @@ from itertools import cycle
 
 init(autoreset=True)
 
-# Initialize the global variable
 LINK = 'https://api.scratch.mit.edu/accounts/checkusername/'
 
 def clear_console():
@@ -33,7 +32,7 @@ def display_ascii_art_with_animation():
     console_width = shutil.get_terminal_size().columns
     colors = cycle([Fore.RED, Fore.LIGHTRED_EX])
 
-    for _ in range(10):  # Animation cycle
+    for _ in range(10):
         clear_console()
         color = next(colors)
         for line in art.splitlines():
@@ -93,7 +92,7 @@ def main():
                 print(Fore.RED + f"Username {count}: {word} is unavailable")
             progress_bar(count, len(words))
             print(Fore.GREEN + f"\nValid usernames: {len(free)}", end="\r")
-        print()  # Ensure progress bar line is separate
+        print()
     except KeyboardInterrupt:
         write_free(free)
         raise SystemExit
