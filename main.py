@@ -71,7 +71,7 @@ def change_endpoint():
     print(Fore.RED + "Current API Endpoint:".center(shutil.get_terminal_size().columns))
     print(Fore.LIGHTRED_EX + LINK.center(shutil.get_terminal_size().columns))
     LINK = input(Fore.RED + "Enter new API endpoint: ")
-    print(Fore.LIGHTRED_EX + "Endpoint updated!".center(shutil.get_terminal_size().columns))
+    print(Fore.GREEN + "Endpoint updated!".center(shutil.get_terminal_size().columns))
     time.sleep(2)
 
 def main():
@@ -90,13 +90,13 @@ def main():
             else:
                 print(Fore.RED + f"Username {count}: {word} is unavailable")
             progress_bar(count, len(words))
-            print(Fore.YELLOW + f"\nValid usernames: {len(free)}", end="\r")
+            print(Fore.GREEN + f"\nValid usernames: {len(free)}", end="\r")
         print()  # Ensure progress bar line is separate
     except KeyboardInterrupt:
         write_free(free)
         raise SystemExit
     write_free(free)
-    print(Fore.LIGHTRED_EX + f"\nCheck complete! {len(free)} usernames available.")
+    print(Fore.GREEN + f"\nCheck complete! {len(free)} usernames available.")
 
 def write_free(free):
     with open('output.txt', 'w') as file:
