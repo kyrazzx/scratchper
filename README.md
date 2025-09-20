@@ -1,6 +1,6 @@
-# 🔥 SCRATCHPER v1 🔍
+# 🔥 SCRATCHPER v1.1 🔍
 
-Welcome to the **SCRATCHPER v1**!  
+Welcome to the **SCRATCHPER v1.1**!  
 This tool allows you to check the availability of usernames using a responsive, animated, and visually appealing interface directly in your terminal. 🌟  
 
 ---
